@@ -23,15 +23,34 @@
 	-->
 </head>
 <body bgcolor="pink">
+	<!-- 引入图片 -->
+	<img src="imgs/t.png">
 	<center>
-		用户登录<br>
+
+		<%
+			String error = request.getParameter("error");
+			if (error != null) {
+				if (error.equals("1")) {
+					out.println("用户没有正常登录，请登录！");
+				}
+			}
+		%>
+		<br> <br>
+		<hr>
+		<br> <br> <br> 用户登录<br>
 		<hr>
 		<form action="LoginClServlet" method="post">
-			用户名:<input type="text" name="username"><br>
-			<br> 密&nbsp;&nbsp;码:<input type="password" name="passwd"><br>
+			用户名:<input type="text" name="username"><br> <br>
+			密&nbsp;&nbsp;码:<input type="password" name="passwd"><br>
 			<br> <input type="submit" value="登录"> <input
 				type="reset" value="重置">
 		</form>
+		<br> <br>
+		<hr>
+		<br> <br>
 	</center>
+
+	<img src="imgs/b.png">
+
 </body>
 </html>

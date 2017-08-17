@@ -10,6 +10,7 @@
 		</id>
 		<property name="username" column="username"></property>
 		<property name="passwd" column="passwd"></property>
+		<property name="email" column="email"></property>
 		<property name="grade" column="grade"></property>
 
 	</class>

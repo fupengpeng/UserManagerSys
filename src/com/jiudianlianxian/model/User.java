@@ -16,6 +16,7 @@ public class User {
 	private int userId;
 	private String username;
 	private String passwd;
+	private String email;
 	private int grade;
 	public int getUserId() {
 		return userId;
@@ -34,6 +35,12 @@ public class User {
 	}
 	public void setPasswd(String passwd) {
 		this.passwd = passwd;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	public int getGrade() {
 		return grade;
